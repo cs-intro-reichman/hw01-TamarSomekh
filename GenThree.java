@@ -4,6 +4,34 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-		// Put your code here	
+		int a , b;
+		a = Integer.parseInt(args[0]);
+		b = Integer.parseInt(args[1]);
+		
+		double RandomNum1 = Math.random();
+		int num1 = (int) (RandomNum1 * (b - a) + a );
+		System.out.println(num1);
+		
+		double RandomNum2 = Math.random();
+		int num2 = (int) (RandomNum2 * (b - a) + a );
+		System.out.println(num2);
+		
+		double RandomNum3 = Math.random();
+		int num3 = (int) (RandomNum3 * (b - a) + a );
+		System.out.println(num3);
+		
+		int minimal = 0;
+		if (num1 <= num2 && num1 <= num3){
+			minimal = num1;
+		}
+		else if(num2 <= num1 && num2 <= num3){
+			minimal = num2;
+		}
+		else if(num3 <= num1 && num3 <= num2){
+			minimal = num3;
+		}
+		
+		
+		System.out.println("The minimal generated number was " + minimal);	
 	}
 }
