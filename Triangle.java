@@ -5,12 +5,15 @@
  */ 
 public class Triangle {
 	public static void main(String[] args) {
+		
+		//reciving 3 lengths from user
 		int a , b , c;
 		
 		a = Integer.parseInt(args[0]);
 		b = Integer.parseInt(args[1]);
 		c = Integer.parseInt(args[2]);
 		
+		//checking if the 3 lengths form a triangle
 		boolean length1 = a < b + c;
 		boolean length2 = b < a + c;
 		boolean length3 = c < a + b;
